@@ -1,0 +1,26 @@
+import os
+os.system('cls')
+
+print('Bem vindo à Historinha Maluca de Vinícius')
+print('Para começarmos, pedirei que digite 6 palavras aleatórias.')
+
+objeto = input('Digite um objeto: ')
+palavra = input ('Digite uma palavra qualquer: ')
+adjetivo = input ('Digite um adjetivo: ')
+verbo = input ('Digite um verbo: ')
+substantivo2 = input ('Digite outro substantivo: ')
+substantivo3 = input ('Digite um objeto: ')
+
+print('A Aventura do Pudim Caramelo!')
+print()
+print('Em uma galáxia muito, muito distante, conhecida como a Via Láctea de Chocolate, vivia um(a) ' + objeto + ' chamado Barnabé. Barnabé não era um ser comum; ele era o guardião de um lendário pudim de caramelo cósmico, que, segundo a lenda, concedia o poder de ' + palavra + ' a quem o devorasse.')
+print()
+print('Certo dia, o terrível Lorde Beterraba, um vilão com uma cabeça de vegetal e um corpo surpreendentemente ' + adjetivo + ', invadiu o planeta de Barnabé. "Eu vim pelo pudim!", gritou Lorde Beterraba, enquanto seus capangas, os Nabos Ninjas, começavam a ' + verbo + ' por toda a cidade.')
+print()
+print('Barnabé, corajoso como sempre, pegou sua arma secreta: um(a) ' + substantivo2 + ' que atirava raios de pura energia de tutti-frutti. "Você nunca vai conseguir, seu legume de quinta categoria!", exclamou Barnabé.')
+print()
+print('A batalha foi épica. Barnabé e Lorde Beterraba duelaram em cima de um cometa em alta velocidade. No momento decisivo, Barnabé olhou para o vilão e disse: "Sabe, no fundo, tudo o que realmente precisamos é de um(a) bom(a) ' + substantivo3 + '!".')
+print()
+print('Lorde Beterraba parou, confuso. "Um... o quê?", perguntou ele. A distração foi suficiente. Barnabé usou sua arma de tutti-frutti para prender o vilão em uma geleia de morango pegajosa.')
+print()
+print('E assim, a galáxia foi salva mais uma vez, provando que, não importa o quão grande seja o problema, a solução pode ser mais estranha do que se imagina.')

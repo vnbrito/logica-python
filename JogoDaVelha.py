@@ -43,7 +43,56 @@ def jogada(linha, coluna):
     #
     #Ou podemos fazer assim:
     return 'O' if jogador == 'X' else 'X'
+
+def temGanhador():
+    """Verifica as linhas"""
+    for linha in range(3):
+        if(
+            tabuleiro[linha][0] != ' ' and
+            tabuleiro[linha][0] == tabuleiro[linha][1] and
+            tabuleiro[linha][0] == tabuleiro[linha][2]
+        ):
+            print(f'{tabuleiro[linha][0]} GANHOU!!!')
+            return True
     
+    """Verifica as colunas"""
+    for coluna in range(3):
+        if(
+            tabuleiro[0][coluna] != ' ' and
+            tabuleiro[0][coluna] == tabuleiro[1][coluna] and
+            tabuleiro[0][coluna] == tabuleiro[2][coluna]
+        ):
+            print(f'{tabuleiro[0][coluna]} GANHOU!!!')
+            return True
+        
+    """ Verifica as diagonais """
+    if(
+        tabuleiro[1][1] != ' ' and
+        (
+            (
+                tabuleiro[0][0] == tabuleiro[1][1] and
+                tabuleiro[0][0] == tabuleiro[2][2]
+            )or
+            (
+                tabuleiro[0][2] == tabuleiro[1][1] and
+                tabuleiro[1][1] == tabuleiro[2][0]
+            )
+        )
+    ):
+        print(f'{tabuleiro[1][1]} GANHOU!!!')
+        return True
+    
+    """ Se não teve ganhador em nenhuma forma """    
+    return False
+
+def temEmpate():
+    for linha in range(3):
+        for coluna in range(3):
+            if tabuleiro[linha][coluna] == ' ':
+                return False
+    print('Acabou empatado!')
+    return True
+
 while True:
     print(f'Jogador da vez: {jogador}')
     try:
@@ -53,3 +102,7 @@ while True:
     except (ValueError, IndexError):
         print('Digite valores numéricos entre 0 e 2')
     exibeTabuleiro()
+    if temGanhador() or temEmpate():
+        break
+
+    

@@ -25,4 +25,5 @@ print(f'Linguagem Favorita: {dados[2]}')
 print(f'Emoji Preferido: {dados[3]}')
 print()
 print('-' * 25)
+print()
 

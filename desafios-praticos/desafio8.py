@@ -48,12 +48,12 @@ def exibeTabuleiro(tabuleiro):
 
 tesouro_encontrado = False
 # Loop que permite o jogador realizar os 'chutes' e o código retornará o tabuleiro com as 'posições' marcadas com X (se não tiver tesouro) e 💎 caso tenha tesouro
-for tentativa in range(5):
+for attempt in range(5):
     os.system('cls') # Limpa tudo o que estava antes no terminal
 
     exibeTabuleiro(tabuleiro)# Redesenha o tabuleiro no estado atual para o jogador ver
 
-    print(f'\n--- Tentativa {tentativa + 1} de 5 ---')# Mostra as informações das novas tentativas
+    print(f'\n--- Tentativa {attempt + 1} de 5 ---')# Mostra as informações das novas tentativas
 
     attempt_line = int(input('Digite um valor de 0 a 2 para linha: '))# Pede para o jogador uma linha de 0 a 2 para buscar o tesouro
     attempt_column = int(input('Digite um valor de 0 a 2 para coluna: '))# Pede para o jogador a coluna de 0 a 2.

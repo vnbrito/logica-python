@@ -46,7 +46,7 @@ def exibeTabuleiro(tabuleiro):
         print('-' * 5)
 
 
-tesouro_encontrado = False # Flag para validar a linha 72/73
+tesouro_encontrado = False
 # Loop que permite o jogador realizar os 'chutes' e o código retornará o tabuleiro com as 'posições' marcadas com X (se não tiver tesouro) e 💎 caso tenha tesouro
 for tentativa in range(5):
     os.system('cls') # Limpa tudo o que estava antes no terminal
